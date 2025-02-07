@@ -3,6 +3,9 @@ import requests
 import os
 
 app = Flask(__name__)
+import logging
+logging.basicConfig(level=logging.DEBUG)
+
 
 # Your ImgBB API Key
 IMGBB_API_KEY = os.getenv("IMGBB_API_KEY", "d516255c6bd11f68fb3f02d1983c4351")
