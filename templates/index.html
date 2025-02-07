@@ -1,14 +1,29 @@
-<form action="/search" method="post" enctype="multipart/form-data">
-    <input type="file" name="image" required>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NSFW Reverse Image Search</title>
+</head>
+<body>
+    <h2>Upload an Image to Search</h2>
     
-    <label for="engine">Choose a Search Engine:</label>
-    <select name="engine" required>
-        <option value="google">Google</option>
-        <option value="bing">Bing</option>
-        <option value="yandex">Yandex</option>
-        <option value="saucenao">SauceNAO</option>
-        <option value="otherNSFW">Other NSFW Sites</option>
-    </select>
-
-    <button type="submit">Search</button>
-</form>
+    <form action="/search" method="post" enctype="multipart/form-data">
+        <input type="file" name="image" required>
+        
+        <label for="engine">Choose a Search Engine:</label>
+        <select name="engine" required>
+            <option value="google">Google Images</option>
+            <option value="bing">Bing Images</option>
+            <option value="yandex">Yandex Images</option>
+            <option value="saucenao">SauceNAO</option>
+            <option value="tineye">TinEye</option>
+            <option value="dropexo">DropMMS/DropEXO</option>
+            <option value="mmsdose">MMSDose</option>
+            <option value="nsfwsearch">NSFW Search Engines</option>
+        </select>
+        
+        <button type="submit">Search</button>
+    </form>
+</body>
+</html>
